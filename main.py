@@ -30,4 +30,3 @@ def main():
 if __name__ == "__main__":
     main()
     print("This is a test")
-    print("Chub Chub")
