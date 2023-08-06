@@ -1,0 +1,16 @@
+
+{
+    "manifest_version": 2,
+    "name": "Email Answering Extension",
+    "version": "1.0",
+    "permissions": ["http://*/", "https://*/"],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.salesforce.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
