@@ -12,7 +12,7 @@ Welcome to the One stop email Chrome extension! This extension is designed to as
 
 1. Clone this repository:
    ```
-   git clone [repository-url]
+   git clone https://github.com/maryamtello1/One-stop-project.git
    ```
 
 2. Open Chrome and navigate to `chrome://extensions/`.
