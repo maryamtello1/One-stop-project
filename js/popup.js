@@ -1,1 +1,0 @@
-//Logic for the popup interface of the extension.

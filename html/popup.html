@@ -1,28 +1,21 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Answering Extension</title>
-    <link rel="stylesheet" href="../css/popup.css">
+    <title>OpenAI Question Answering</title>
 </head>
-<body style="font-family: 'Times New Roman', serif;">
+<body>
+    <h1>Ask OpenAI</h1>
     
-    <div class="popup-container">
-        <h2>Bruce the Email Answering Goose</h2>
-        
-        <p>Click the button below to auto-generate a reply:</p>
-        <textarea id="email" name="email" rows="8" col="140"></textarea>
-        
-        <button id="generateReply">Generate Reply</button>
-        <button id="clearContents">Clear Everything</button>
-        <button id="addName">Add Name</button>
-        
-        
-        <div id="response">
-            <!-- The generated reply from OpenAI API will be displayed here -->
-        </div>
-    </div>
-    <script src="../js/popup.js"></script>
+    <label for="question">Your question:</label>
+    <textarea id="question" rows="4" cols="50"></textarea><br><br>
+    <button id="submit">Ask</button><br><br>
+    
+    <h2>Response:</h2>
+    <div id="response"></div>
+    <script src="../js/api.js"></script>
 </body>
 </html>
+
