@@ -26,7 +26,6 @@
     font-weight: 900;
     cursor: pointer;
     border:none;
-
 }
 .button:hover{
     background-color: #ffc002;
@@ -39,4 +38,14 @@
 .button:active{
     background-color: #00274C;
     color:#FFCB05
+}
+.action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-gif {
+    max-height: 5px; /* Adjust based on your preference */
+    margin-left: 100px;
 }
