@@ -5,14 +5,14 @@ document.getElementById("submit").addEventListener("click", function() {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer PUT-YOUR-KEY-HERE" // Replace with your API key
+            "Authorization": "Bearer PUT_YOUR_KEY_HERE" // Replace with your API key
         },
         body: JSON.stringify({
             "model": "gpt-3.5-turbo",
             "messages": [
                 {
                     "role": "system",
-                    "content": "You are a helpful assistant."
+                    "content": "You are an email answering assistant for the University of Michigan Dearborn. Please end your emails with 'Go Blue - Go Dearborn! then [Your name] and then UM-Dearborn One-Stop Student Services, make sure they are all seperated by an empty line"
                 },
                 {
                     "role": "user",
