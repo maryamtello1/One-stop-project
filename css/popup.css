@@ -18,6 +18,19 @@
     padding: 10px;
 
 }
+#label-div{
+    padding-bottom: 10px;
+}
+.action-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-gif {
+    max-height: 5px; /* Adjust based on your preference */
+    margin-left: 100px;
+}
 .button{
     background-color: #FFCB05;
     border-radius: 5px;
@@ -39,13 +52,6 @@
     background-color: #00274C;
     color:#FFCB05
 }
-.action-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.action-gif {
-    max-height: 5px; /* Adjust based on your preference */
-    margin-left: 100px;
+#goose-container{
+    display: none;
 }

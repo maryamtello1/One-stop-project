@@ -12,13 +12,14 @@
         <h1 id="extension-header">Bruce the Email Answering Goose</h1>
     </div>
     <div id="main">
-
-    <label for="question">Insert the email you want to respond to:</label>
+    <div id="label-div">
+        <label for="question">Insert the email you want to respond to:</label>
+    </div>
     <textarea id="question" rows="4" cols="50"></textarea><br><br>
     <div class="action-row">
         <button class="button" id="submit">Generate Response</button><br><br>
-        <img src="../assets/goose-walk-unscreen.gif" width=70 height=70 alt="goose walk gif" class="action.gif">
-    </div>  
+        <img src="../assets/goose-walk-unscreen.gif" width=70 height=70 alt="goose walk gif" class="action.gif" id="goose-container"> 
+    </div>
     <h2 id="response-header">Response:</h2>
     <div id="response"></div>
 </div>
