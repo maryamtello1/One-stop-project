@@ -1,6 +1,6 @@
 document.getElementById("submit").addEventListener("click", function() {
     const question = document.getElementById("question").value;
-    
+
     fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
         headers: {
@@ -23,10 +23,13 @@ document.getElementById("submit").addEventListener("click", function() {
     })
     .then(response => response.json())
     .then(data => {
+        // Show the response header when the response is received
+        document.getElementById("response-header").style.display = "block";
         document.getElementById("response").innerText = data.choices[0].message.content;
     })
     .catch(error => {
         console.error("Error:", error);
+        document.getElementById("response-header").style.display = "block";
         document.getElementById("response").innerText = "An error occurred.";
     });
 });
