@@ -5,6 +5,8 @@
 }
 #response-header{
     display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #extension-header{
     color: #FFCB05;
