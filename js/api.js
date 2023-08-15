@@ -1,5 +1,11 @@
 document.getElementById("submit").addEventListener("click", function() {
     const question = document.getElementById("question").value;
+    const gooseContainer = document.getElementById("goose-container");
+    const responseHeader = document.getElementById("response-header");
+    const responseDiv = document.getElementById("response");
+
+    // Display the goose container when the button is clicked
+    gooseContainer.style.display = "block";
 
     fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
@@ -12,7 +18,7 @@ document.getElementById("submit").addEventListener("click", function() {
             "messages": [
                 {
                     "role": "system",
-                    "content": "You are an email answering assistant for the University of Michigan Dearborn. Please end your emails with 'Go Blue - Go Dearborn! then [Your name] and then UM-Dearborn One-Stop Student Services, make sure they are all seperated by an empty line"
+                    "content": "You are an email answering assistant for the University of Michigan Dearborn. Please end your emails with 'Go Blue - Go Dearborn! then [Your name] and then UM-Dearborn One-Stop Student Services, make sure they are all separated by an empty line"
                 },
                 {
                     "role": "user",
@@ -23,13 +29,14 @@ document.getElementById("submit").addEventListener("click", function() {
     })
     .then(response => response.json())
     .then(data => {
-        // Show the response header when the response is received
-        document.getElementById("response-header").style.display = "block";
-        document.getElementById("response").innerText = data.choices[0].message.content;
+        gooseContainer.style.display = "none";
+        responseHeader.style.display = "block";
+        responseDiv.innerText = data.choices[0].message.content;
     })
     .catch(error => {
         console.error("Error:", error);
-        document.getElementById("response-header").style.display = "block";
-        document.getElementById("response").innerText = "An error occurred.";
+        gooseContainer.style.display = "none";  
+        responseHeader.style.display = "block";
+        responseDiv.innerText = "An error occurred.";
     });
 });
