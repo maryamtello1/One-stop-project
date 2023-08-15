@@ -2,14 +2,21 @@
   "manifest_version": 2,
   "name": "Email Answering Extension",
   "version": "1.0",
-  "description": "My extension doesn't do anything yet!",
+  "description": "An email answering chrome extension for the University of Michigan Dearborn, Bruce will answer emails for you!",
+  "icons":{
+    "16": "assets/bear.png",
+    "48": "assets/bruce.png",
+    "128": "assets/bruce.png"
+
+  },
   "background": {
       "persistent": false,
       "scripts": ["js/background.js"]
   },
   "content_scripts": [{
-      "matches": ["<all_urls>"],  
-      "js": ["js/content.js"]
+      "matches": ["https://*.salesforce.com/*"],  
+      "js": ["js/content.js"],
+      "run_at": "document_end"
   }],
   "browser_action": {
      "default_popup": "html/popup.html", 

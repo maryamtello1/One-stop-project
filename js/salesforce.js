@@ -1,1 +1,0 @@
-//Functions and methods specific to Salesforce integration
