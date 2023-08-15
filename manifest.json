@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "Email Answering Extension",
+  "name": "Bruce The Goose",
   "version": "1.0",
   "description": "An email answering chrome extension for the University of Michigan Dearborn, Bruce will answer emails for you!",
   "icons":{
-    "16": "assets/bear.png",
+    "16": "assets/bruce.png",
     "48": "assets/bruce.png",
     "128": "assets/bruce.png"
 
@@ -20,7 +20,7 @@
   }],
   "browser_action": {
      "default_popup": "html/popup.html", 
-     "default_icon":  "assets/bear.png" 
+     "default_icon":  "assets/bruce.png" 
   },
   "permissions": [
       "activeTab",
