@@ -3,7 +3,7 @@ function generateEmailResponse(question) {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer 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" // Replace with your API key
+            "Authorization": "Bearer PUT-YOUR-KEY-HERE" // Replace with your API key
         },
         body: JSON.stringify({
             "model": "gpt-3.5-turbo",
